@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    tools:context=".EditActivity">
+
+    <EditText
+        android:id="@+id/et_nama_edt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nama Lengkap"
+        android:layout_margin="10dp"/>
+
+    <EditText
+        android:id="@+id/et_nomor_edt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nomor Telepon"
+        android:layout_below="@+id/et_nama_edt"
+        android:layout_margin="10dp"/>
+    <EditText
+        android:id="@+id/et_jk_edt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Jenis Kelamin"
+        android:layout_below="@+id/et_nomor_edt"
+        android:layout_margin="10dp"/>
+    <EditText
+        android:id="@+id/et_alamat_edt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Alamat"
+        android:layout_below="@+id/et_jk_edt"
+        android:layout_margin="10dp"/>
+    <EditText
+        android:id="@+id/et_deskripsi_edt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Deskripsi"
+        android:layout_below="@+id/et_alamat_edt"
+        android:layout_margin="10dp"/>
+    <Button
+        android:id="@+id/btn_submit_edt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit"
+        android:layout_alignParentEnd="true"
+        android:padding="8dp"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/et_deskripsi_edt"/>
+</RelativeLayout>
